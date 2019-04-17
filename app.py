@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/hello', methods=['GET', 'POST'])
 def hello():
 	if request.method == 'GET':
-				return "Hello World!"
+				return "Hello, world!"
 	if request.method == 'POST':
 		return "method not supported", 405
 
@@ -23,4 +23,4 @@ def test():
 
 if __name__ == "__main__":
 	app.debug = True;
-	app.run(host = "0.0.0.0", port = 8080)
+	app.run(host = "0.0.0.0", port = 8081)
